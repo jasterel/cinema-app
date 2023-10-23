@@ -1,5 +1,7 @@
 # cinema-app
 
+DISCLAIMER: Приложение работает только со включенным VPN! Любая страна, кроме России. (причина: TMDB database is unavailable in Russian Federation)
+
 **v1.0**
 
 * Добавлен кастомизированный TabBar в ContentView
