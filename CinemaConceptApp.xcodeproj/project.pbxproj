@@ -16,6 +16,8 @@
 		941517CA2AE19CA100137FB6 /* ViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941517C92AE19CA100137FB6 /* ViewMain.swift */; };
 		941517CC2AE19CAE00137FB6 /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941517CB2AE19CAE00137FB6 /* ViewList.swift */; };
 		941517CE2AE19CBA00137FB6 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941517CD2AE19CBA00137FB6 /* ViewSettings.swift */; };
+		9472B29E2AE8424D000CB0BD /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472B29C2AE8424D000CB0BD /* TrendingItem.swift */; };
+		9472B29F2AE8424D000CB0BD /* MovieDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */; };
 		94883B082AE1C0B500BC1708 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B072AE1C0B500BC1708 /* WelcomeView.swift */; };
 		94883B0A2AE1C0C000BC1708 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B092AE1C0C000BC1708 /* SignInView.swift */; };
 		94883B0C2AE1C0D400BC1708 /* GetCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */; };
@@ -34,6 +36,8 @@
 		941517C92AE19CA100137FB6 /* ViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMain.swift; sourceTree = "<group>"; };
 		941517CB2AE19CAE00137FB6 /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
 		941517CD2AE19CBA00137FB6 /* ViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
+		9472B29C2AE8424D000CB0BD /* TrendingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
+		9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBViewModel.swift; sourceTree = "<group>"; };
 		94883B072AE1C0B500BC1708 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		94883B092AE1C0C000BC1708 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCodeView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		941517B42AE19C0B00137FB6 /* CinemaConceptApp */ = {
 			isa = PBXGroup;
 			children = (
+				9472B29B2AE8424D000CB0BD /* FuncModels */,
 				941517C42AE19C4B00137FB6 /* Views */,
 				941517B52AE19C0B00137FB6 /* CinemaConceptAppApp.swift */,
 				941517B72AE19C0B00137FB6 /* ContentView.swift */,
@@ -103,6 +108,16 @@
 				94FB9DFE2AE5EBA6005A8FC7 /* Board.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9472B29B2AE8424D000CB0BD /* FuncModels */ = {
+			isa = PBXGroup;
+			children = (
+				9472B29C2AE8424D000CB0BD /* TrendingItem.swift */,
+				9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */,
+			);
+			name = FuncModels;
+			path = "../../CinemaConceptApp copy/CinemaConceptApp/FuncModels";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +197,10 @@
 				941517CC2AE19CAE00137FB6 /* ViewList.swift in Sources */,
 				94883B082AE1C0B500BC1708 /* WelcomeView.swift in Sources */,
 				94D6991C2AE590BB00AA91F7 /* NavBarView.swift in Sources */,
+				9472B29F2AE8424D000CB0BD /* MovieDBViewModel.swift in Sources */,
 				941517B82AE19C0B00137FB6 /* ContentView.swift in Sources */,
 				94883B0C2AE1C0D400BC1708 /* GetCodeView.swift in Sources */,
+				9472B29E2AE8424D000CB0BD /* TrendingItem.swift in Sources */,
 				941517CE2AE19CBA00137FB6 /* ViewSettings.swift in Sources */,
 				941517C62AE19C7C00137FB6 /* ViewDownloads.swift in Sources */,
 				941517B62AE19C0B00137FB6 /* CinemaConceptAppApp.swift in Sources */,

@@ -4,6 +4,7 @@
 //
 //  Created by Maxim on 10/19/23.
 //
+//  My List (Favorites) Page
 
 import SwiftUI
 
