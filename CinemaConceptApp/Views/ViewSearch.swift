@@ -17,6 +17,8 @@ struct ViewSearch: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
+                Color.clear
+                    .ignoresSafeArea()
                 if searchText.isEmpty {
                     if viewModel.searchResults.isEmpty {
                         Text("")
@@ -65,6 +67,7 @@ struct ViewSearch: View {
             .padding(.bottom, 50)
             .background(Color("BGCOLOR")
                 .ignoresSafeArea())
+            .toolbarBackground(.BGCOLOR)
         }
         .searchable(text: $searchText)
         .onChange(of: searchText) { oldValue, newValue in
@@ -75,8 +78,6 @@ struct ViewSearch: View {
         .onAppear{
             viewModel.searchBar(term: "")
         }
-        .background(Color("BGCOLOR")
-            .ignoresSafeArea())
         .accentColor(.orange)
     }
 }
