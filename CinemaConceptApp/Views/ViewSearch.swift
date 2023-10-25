@@ -79,6 +79,7 @@ struct ViewSearch: View {
             viewModel.searchBar(term: "")
         }
         .accentColor(.orange)
+        .preferredColorScheme(.dark)
     }
 }
 

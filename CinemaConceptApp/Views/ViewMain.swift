@@ -88,6 +88,7 @@ struct ViewMain: View {
         .overlay (
             NavBarView(title: "Movies")
         )
+        .preferredColorScheme(.dark)
     }
 }
 
