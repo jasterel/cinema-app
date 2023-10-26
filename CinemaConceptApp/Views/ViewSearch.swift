@@ -21,9 +21,15 @@ struct ViewSearch: View {
                     .ignoresSafeArea()
                 if searchText.isEmpty {
                     if viewModel.searchResults.isEmpty {
-                        Text("")
-                    } else {
-                        //
+                        VStack {
+                            Text("Find a Movie")
+                                .font(.title.weight(.bold))
+                            Text("Start searching for your favorite movie in one click")
+                                .multilineTextAlignment(.center)
+                        }
+                        .padding()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .foregroundColor(.gray)
                     }
                 } else {
                     LazyVStack {
