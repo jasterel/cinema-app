@@ -21,12 +21,12 @@
 		94595C422AEED7CB0066B1E6 /* CraftworkGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3D2AEED7CB0066B1E6 /* CraftworkGrotesk-Medium.ttf */; };
 		94595C432AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3E2AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf */; };
 		94595C442AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3F2AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf */; };
-		9472B29E2AE8424D000CB0BD /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472B29C2AE8424D000CB0BD /* TrendingItem.swift */; };
-		9472B29F2AE8424D000CB0BD /* MovieDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */; };
 		9482416B2AEBC457004764B4 /* ProductPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482416A2AEBC457004764B4 /* ProductPageView.swift */; };
 		94883B082AE1C0B500BC1708 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B072AE1C0B500BC1708 /* WelcomeView.swift */; };
 		94883B0A2AE1C0C000BC1708 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B092AE1C0C000BC1708 /* SignInView.swift */; };
 		94883B0C2AE1C0D400BC1708 /* GetCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */; };
+		94C884D62AEF16FE00FAE2E4 /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C884D42AEF16FE00FAE2E4 /* TrendingItem.swift */; };
+		94C884D72AEF16FE00FAE2E4 /* MovieDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C884D52AEF16FE00FAE2E4 /* MovieDBViewModel.swift */; };
 		94D6991C2AE590BB00AA91F7 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6991B2AE590BB00AA91F7 /* NavBarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,12 +47,12 @@
 		94595C3E2AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CraftworkGrotesk-Regular.ttf"; sourceTree = "<group>"; };
 		94595C3F2AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CraftworkGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
 		94595C452AEED8060066B1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		9472B29C2AE8424D000CB0BD /* TrendingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
-		9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBViewModel.swift; sourceTree = "<group>"; };
 		9482416A2AEBC457004764B4 /* ProductPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageView.swift; sourceTree = "<group>"; };
 		94883B072AE1C0B500BC1708 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		94883B092AE1C0C000BC1708 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCodeView.swift; sourceTree = "<group>"; };
+		94C884D42AEF16FE00FAE2E4 /* TrendingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
+		94C884D52AEF16FE00FAE2E4 /* MovieDBViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBViewModel.swift; sourceTree = "<group>"; };
 		94D6991B2AE590BB00AA91F7 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				94595C452AEED8060066B1E6 /* Info.plist */,
-				9472B29B2AE8424D000CB0BD /* FuncModels */,
+				94C884D32AEF16FE00FAE2E4 /* FuncModels */,
 				941517C42AE19C4B00137FB6 /* Views */,
 				941517B52AE19C0B00137FB6 /* CinemaConceptAppApp.swift */,
 				941517B72AE19C0B00137FB6 /* ContentView.swift */,
@@ -127,15 +127,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9472B29B2AE8424D000CB0BD /* FuncModels */ = {
+		94C884D32AEF16FE00FAE2E4 /* FuncModels */ = {
 			isa = PBXGroup;
 			children = (
-				9472B29C2AE8424D000CB0BD /* TrendingItem.swift */,
-				9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */,
+				94C884D42AEF16FE00FAE2E4 /* TrendingItem.swift */,
+				94C884D52AEF16FE00FAE2E4 /* MovieDBViewModel.swift */,
 			);
 			name = FuncModels;
-			path = "../../CinemaConceptApp copy/CinemaConceptApp/FuncModels";
-			sourceTree = "<group>";
+			path = CinemaConceptApp/FuncModels;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -214,15 +214,15 @@
 			files = (
 				9482416B2AEBC457004764B4 /* ProductPageView.swift in Sources */,
 				94883B0A2AE1C0C000BC1708 /* SignInView.swift in Sources */,
+				94C884D62AEF16FE00FAE2E4 /* TrendingItem.swift in Sources */,
+				94C884D72AEF16FE00FAE2E4 /* MovieDBViewModel.swift in Sources */,
 				941517C82AE19C9800137FB6 /* ViewSearch.swift in Sources */,
 				941517CA2AE19CA100137FB6 /* ViewMain.swift in Sources */,
 				941517CC2AE19CAE00137FB6 /* ViewList.swift in Sources */,
 				94883B082AE1C0B500BC1708 /* WelcomeView.swift in Sources */,
 				94D6991C2AE590BB00AA91F7 /* NavBarView.swift in Sources */,
-				9472B29F2AE8424D000CB0BD /* MovieDBViewModel.swift in Sources */,
 				941517B82AE19C0B00137FB6 /* ContentView.swift in Sources */,
 				94883B0C2AE1C0D400BC1708 /* GetCodeView.swift in Sources */,
-				9472B29E2AE8424D000CB0BD /* TrendingItem.swift in Sources */,
 				941517CE2AE19CBA00137FB6 /* ViewSettings.swift in Sources */,
 				941517C62AE19C7C00137FB6 /* ViewDownloads.swift in Sources */,
 				941517B62AE19C0B00137FB6 /* CinemaConceptAppApp.swift in Sources */,

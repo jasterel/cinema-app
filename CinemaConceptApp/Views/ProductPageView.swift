@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ProductPageView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     let movie: movieCard
+    
+    @StateObject var model = MovieCastViewModel()
     
     var body: some View {
         
@@ -43,7 +47,7 @@ struct ProductPageView: View {
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
                 }
-                .padding(.horizontal, 35)
+                .padding(.horizontal, 20)
                 .padding(.top, 10)
                 
                 // FIXME: Button is elidgeable only if a text is clicked
@@ -56,7 +60,7 @@ struct ProductPageView: View {
                         )
                         .padding(.horizontal, 20)
                         .padding(.vertical, 14)
-                        .frame(width: 152, height: 45, alignment: .center)
+                        .frame(width: 167, height: 45, alignment: .center)
                         .background(Color(red: 1, green: 0.62, blue: 0.01))
 
                         .cornerRadius(14)
@@ -68,7 +72,7 @@ struct ProductPageView: View {
                         )
                         .padding(.horizontal, 20)
                         .padding(.vertical, 14)
-                        .frame(width: 151, height: 45, alignment: .center)
+                        .frame(width: 166, height: 45, alignment: .center)
                         .cornerRadius(14)
                         .overlay(
                             RoundedRectangle(cornerRadius: 14)
@@ -76,20 +80,28 @@ struct ProductPageView: View {
                             .stroke(Color(red: 1, green: 0.62, blue: 0.01), lineWidth: 1)
                         )
                 }
-                .padding(.horizontal, 35)
+                .padding(.horizontal, 20)
                 .padding(.vertical, 10)
                 Divider()
                     .padding(.top, 10)
                 
                 // MARK: OVERVIEW
-                HStack {
-                    Text(movie.overview)
-                }
-                .padding(.horizontal, 35)
-                .padding(.vertical, 10)
+                Text(movie.overview)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
                 Divider()
                 
                 // Movie Actors Will Be Here
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack {
+                        ForEach(model.credits?.cast ?? []) { cast in
+                            CastView(cast: cast)
+                                .padding(.horizontal, 7)
+                        }
+                        Spacer()
+                    }
+                }
+                .padding(.horizontal, 20)
             }
             .padding(.bottom, 60)
         }
@@ -99,6 +111,21 @@ struct ProductPageView: View {
         .navigationTitle(movie.title)
         .navigationBarTitleDisplayMode(.inline)
         .preferredColorScheme(.dark)
+//        .overlay(alignment: .topLeading) {
+//            Button {
+//                dismiss()
+//            } label: {
+//                Image(systemName: "chevron.left")
+//                    .imageScale(.large)
+//                    .fontWeight(.bold)
+//            }
+//            .padding(.leading)
+//        }
+//        .toolbar(.hidden, for: .navigationBar)
+        .task {
+            await model.movieCredits(for: movie.id)
+            await model.loadCast()
+        }
     }
     
     func fav() {
@@ -113,5 +140,32 @@ struct ProductPageView: View {
 struct ProductPageView_Previews: PreviewProvider {
     static var previews: some View {
         ProductPageView(movie: .moviePage)
+    }
+}
+
+struct CastView: View {
+    
+    let cast: movieCast.Cast
+    
+    var body: some View {
+        VStack {
+            AsyncImage(url: cast.castURL) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
+            } placeholder: {
+                ProgressView()
+                    .frame(width: 100, height: 100)
+            }
+            .overlay(
+                Circle()
+                    .stroke(.orange, lineWidth: 1.5)
+            )
+            .padding(.vertical, 10)
+            Text(cast.name)
+                .frame(width: 100)
+        }
     }
 }

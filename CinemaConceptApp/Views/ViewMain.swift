@@ -150,6 +150,22 @@ struct movieCard: Identifiable, Decodable {
     }
 }
 
+struct movieCast: Identifiable, Decodable {
+    let id: Int
+    let cast: [Cast]
+    
+    struct Cast: Identifiable, Decodable {
+        let id: Int
+        let name: String
+        let profile_path: String?
+        
+        var castURL: URL? {
+            let baseURL = URL(string: "https://image.tmdb.org/t/p/w500/")!
+            return baseURL.appending(path: profile_path ?? "") 
+        }
+    }
+}
+
 struct ViewMain_Previews: PreviewProvider {
     static var previews: some View {
         ViewMain()
