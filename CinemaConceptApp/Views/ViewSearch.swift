@@ -35,7 +35,7 @@ struct ViewSearch: View {
                     LazyVStack {
                         ForEach(viewModel.searchResults) { item in
                             HStack {
-                                AsyncImage(url: item.backdropURL) { image in
+                                AsyncImage(url: item.moviePostURL) { image in
                                     image
                                         .resizable()
                                         .scaledToFill()

@@ -16,13 +16,18 @@
 		941517CA2AE19CA100137FB6 /* ViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941517C92AE19CA100137FB6 /* ViewMain.swift */; };
 		941517CC2AE19CAE00137FB6 /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941517CB2AE19CAE00137FB6 /* ViewList.swift */; };
 		941517CE2AE19CBA00137FB6 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941517CD2AE19CBA00137FB6 /* ViewSettings.swift */; };
+		94595C402AEED7CB0066B1E6 /* CraftworkGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3B2AEED7CB0066B1E6 /* CraftworkGrotesk-Bold.ttf */; };
+		94595C412AEED7CB0066B1E6 /* CraftworkGrotesk-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3C2AEED7CB0066B1E6 /* CraftworkGrotesk-Heavy.ttf */; };
+		94595C422AEED7CB0066B1E6 /* CraftworkGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3D2AEED7CB0066B1E6 /* CraftworkGrotesk-Medium.ttf */; };
+		94595C432AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3E2AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf */; };
+		94595C442AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94595C3F2AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf */; };
 		9472B29E2AE8424D000CB0BD /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472B29C2AE8424D000CB0BD /* TrendingItem.swift */; };
 		9472B29F2AE8424D000CB0BD /* MovieDBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */; };
+		9482416B2AEBC457004764B4 /* ProductPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482416A2AEBC457004764B4 /* ProductPageView.swift */; };
 		94883B082AE1C0B500BC1708 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B072AE1C0B500BC1708 /* WelcomeView.swift */; };
 		94883B0A2AE1C0C000BC1708 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B092AE1C0C000BC1708 /* SignInView.swift */; };
 		94883B0C2AE1C0D400BC1708 /* GetCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */; };
 		94D6991C2AE590BB00AA91F7 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6991B2AE590BB00AA91F7 /* NavBarView.swift */; };
-		94FB9DFF2AE5EBA6005A8FC7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB9DFE2AE5EBA6005A8FC7 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,13 +41,19 @@
 		941517C92AE19CA100137FB6 /* ViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMain.swift; sourceTree = "<group>"; };
 		941517CB2AE19CAE00137FB6 /* ViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewList.swift; sourceTree = "<group>"; };
 		941517CD2AE19CBA00137FB6 /* ViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
+		94595C3B2AEED7CB0066B1E6 /* CraftworkGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CraftworkGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		94595C3C2AEED7CB0066B1E6 /* CraftworkGrotesk-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CraftworkGrotesk-Heavy.ttf"; sourceTree = "<group>"; };
+		94595C3D2AEED7CB0066B1E6 /* CraftworkGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CraftworkGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		94595C3E2AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CraftworkGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		94595C3F2AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CraftworkGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		94595C452AEED8060066B1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9472B29C2AE8424D000CB0BD /* TrendingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
 		9472B29D2AE8424D000CB0BD /* MovieDBViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBViewModel.swift; sourceTree = "<group>"; };
+		9482416A2AEBC457004764B4 /* ProductPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageView.swift; sourceTree = "<group>"; };
 		94883B072AE1C0B500BC1708 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		94883B092AE1C0C000BC1708 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCodeView.swift; sourceTree = "<group>"; };
 		94D6991B2AE590BB00AA91F7 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
-		94FB9DFE2AE5EBA6005A8FC7 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +86,17 @@
 		941517B42AE19C0B00137FB6 /* CinemaConceptApp */ = {
 			isa = PBXGroup;
 			children = (
+				94595C452AEED8060066B1E6 /* Info.plist */,
 				9472B29B2AE8424D000CB0BD /* FuncModels */,
 				941517C42AE19C4B00137FB6 /* Views */,
 				941517B52AE19C0B00137FB6 /* CinemaConceptAppApp.swift */,
 				941517B72AE19C0B00137FB6 /* ContentView.swift */,
 				941517B92AE19C0C00137FB6 /* Assets.xcassets */,
+				94595C3B2AEED7CB0066B1E6 /* CraftworkGrotesk-Bold.ttf */,
+				94595C3C2AEED7CB0066B1E6 /* CraftworkGrotesk-Heavy.ttf */,
+				94595C3D2AEED7CB0066B1E6 /* CraftworkGrotesk-Medium.ttf */,
+				94595C3E2AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf */,
+				94595C3F2AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf */,
 				941517BB2AE19C0C00137FB6 /* Preview Content */,
 			);
 			path = CinemaConceptApp;
@@ -105,7 +122,7 @@
 				94883B092AE1C0C000BC1708 /* SignInView.swift */,
 				94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */,
 				94D6991B2AE590BB00AA91F7 /* NavBarView.swift */,
-				94FB9DFE2AE5EBA6005A8FC7 /* Board.swift */,
+				9482416A2AEBC457004764B4 /* ProductPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,7 +195,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94595C402AEED7CB0066B1E6 /* CraftworkGrotesk-Bold.ttf in Resources */,
+				94595C442AEED7CB0066B1E6 /* CraftworkGrotesk-SemiBold.ttf in Resources */,
+				94595C432AEED7CB0066B1E6 /* CraftworkGrotesk-Regular.ttf in Resources */,
 				941517BD2AE19C0C00137FB6 /* Preview Assets.xcassets in Resources */,
+				94595C412AEED7CB0066B1E6 /* CraftworkGrotesk-Heavy.ttf in Resources */,
+				94595C422AEED7CB0066B1E6 /* CraftworkGrotesk-Medium.ttf in Resources */,
 				941517BA2AE19C0C00137FB6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,9 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9482416B2AEBC457004764B4 /* ProductPageView.swift in Sources */,
 				94883B0A2AE1C0C000BC1708 /* SignInView.swift in Sources */,
 				941517C82AE19C9800137FB6 /* ViewSearch.swift in Sources */,
-				94FB9DFF2AE5EBA6005A8FC7 /* Board.swift in Sources */,
 				941517CA2AE19CA100137FB6 /* ViewMain.swift in Sources */,
 				941517CC2AE19CAE00137FB6 /* ViewList.swift in Sources */,
 				94883B082AE1C0B500BC1708 /* WelcomeView.swift in Sources */,
@@ -340,6 +362,7 @@
 				DEVELOPMENT_TEAM = QJCK2S4M34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaConceptApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -369,6 +392,7 @@
 				DEVELOPMENT_TEAM = QJCK2S4M34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaConceptApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
