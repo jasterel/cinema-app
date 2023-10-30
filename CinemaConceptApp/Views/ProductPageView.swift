@@ -52,33 +52,42 @@ struct ProductPageView: View {
                 
                 // FIXME: Button is elidgeable only if a text is clicked
                 HStack {
-                    Button("Play", action: playerOn)
-                        .foregroundColor(.white)
-                        .font(
-                            Font.custom("Craftwork Grotesk", size: 16)
-                            .weight(.semibold)
-                        )
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 14)
-                        .frame(width: 167, height: 45, alignment: .center)
-                        .background(Color(red: 1, green: 0.62, blue: 0.01))
+                    Button {
+                        print("OpenPlayer")
+                    } label: {
+                        Text("Play")
+                            .foregroundColor(.white)
+                            .font(
+                                Font.custom("Craftwork Grotesk", size: 16)
+                                .weight(.semibold)
+                            )
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 14)
+                            .frame(width: 167, height: 45, alignment: .center)
+                            .background(Color(red: 1, green: 0.62, blue: 0.01))
 
-                        .cornerRadius(14)
+                            .cornerRadius(14)
+                    }
                     Spacer()
-                    Button("Watch Later", action: fav)
-                        .font(
-                            Font.custom("Craftwork Grotesk", size: 16)
-                            .weight(.semibold)
-                        )
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 14)
-                        .frame(width: 166, height: 45, alignment: .center)
-                        .cornerRadius(14)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                            .inset(by: 0.5)
-                            .stroke(Color(red: 1, green: 0.62, blue: 0.01), lineWidth: 1)
-                        )
+                    
+                    Button {
+                        print("Added")
+                    } label: {
+                        Text("Watch Later")
+                            .font(
+                                Font.custom("Craftwork Grotesk", size: 16)
+                                .weight(.semibold)
+                            )
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 14)
+                            .frame(width: 166, height: 45, alignment: .center)
+                            .cornerRadius(14)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 14)
+                                .inset(by: 0.5)
+                                .stroke(Color(red: 1, green: 0.62, blue: 0.01), lineWidth: 1)
+                            )
+                    }
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 10)
