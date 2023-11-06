@@ -136,14 +136,6 @@ struct ProductPageView: View {
             await model.loadCast()
         }
     }
-    
-    func fav() {
-        print("Added")
-    }
-    
-    func playerOn() {
-        print("Open Player")
-    }
 }
 
 struct ProductPageView_Previews: PreviewProvider {

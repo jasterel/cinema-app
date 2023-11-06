@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectTab = "Main"
+    @State private var index: Int = 0
     
     let tabs = ["Downloads", "Search", "Main", "List", "Settings"]
     
@@ -17,29 +18,34 @@ struct ContentView: View {
     }
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            
-            TabView(selection: $selectTab) {
+        // MARK: WELCOME & SIGN IN = 0 / OTHER = 1
+        if index == 0 {
+            WelcomeView()
+        } else {
+            ZStack(alignment: .bottom) {
                 
-                ViewDownloads()
-                    .tag("Downloads")
-                ViewSearch()
-                    .tag("Search")
-                ViewMain()
-                    .tag("Main")
-                ViewList()
-                    .tag("List")
-                ViewSettings()
-                    .tag("Settings")
-            }
-            HStack {
-                ForEach(tabs, id: \.self) { tab in
-                    TabBarItem(tab: tab, selected: $selectTab)
+                TabView(selection: $selectTab) {
+                    
+                    ViewDownloads()
+                        .tag("Downloads")
+                    ViewSearch()
+                        .tag("Search")
+                    ViewMain()
+                        .tag("Main")
+                    ViewList()
+                        .tag("List")
+                    ViewSettings()
+                        .tag("Settings")
                 }
+                HStack {
+                    ForEach(tabs, id: \.self) { tab in
+                        TabBarItem(tab: tab, selected: $selectTab)
+                    }
+                }
+                .padding(.vertical, 15)
+                .frame(maxWidth: .infinity)
+                .background(.BGCOLOR)
             }
-            .padding(.vertical, 15)
-            .frame(maxWidth: .infinity)
-            .background(.BGCOLOR)
         }
     }
 }

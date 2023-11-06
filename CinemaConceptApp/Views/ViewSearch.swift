@@ -35,24 +35,27 @@ struct ViewSearch: View {
                     LazyVStack {
                         ForEach(viewModel.searchResults) { item in
                             HStack {
-                                AsyncImage(url: item.moviePostURL) { image in
-                                    image
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(width: 80, height: 120)
-                                } placeholder: {
-                                    ProgressView()
-                                        .frame(width: 80, height: 120)
+                                NavigationLink {
+                                    ProductPageView(movie: item)
+                                } label: {
+                                    AsyncImage(url: item.moviePostURL) { image in
+                                        image
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 80, height: 120)
+                                    } placeholder: {
+                                        ProgressView()
+                                            .frame(width: 80, height: 120)
+                                    }
+                                    .clipped()
+                                    .cornerRadius(20)
+                                    .overlay(
+                                            RoundedRectangle(cornerRadius: 20)
+                                                .stroke(.orange, lineWidth: 1.5)
+                                        )
+                                    .padding(.horizontal, 20)
+                                    .padding(.vertical, 5)
                                 }
-                                .clipped()
-                                .cornerRadius(20)
-                                .overlay(
-                                        RoundedRectangle(cornerRadius: 20)
-                                            .stroke(.orange, lineWidth: 1.5)
-                                    )
-                                .padding(.horizontal, 20)
-                                .padding(.vertical, 5)
-                                
                                 VStack(alignment: .leading) {
                                     Text(item.title)
                                         .font(.system(size: 18))
