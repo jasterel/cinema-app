@@ -101,6 +101,7 @@ struct ViewMain: View {
             }
             .padding()
             .background(Color("BGCOLOR"))
+            .accentColor(.orange)
             .overlay (
                 NavBarView(title: "Movies")
             )

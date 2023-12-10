@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectTab = "Main"
-    @State private var index: Int = 0
+    @State private var index: Int = 1
     
     let tabs = ["Downloads", "Search", "Main", "List", "Settings"]
     

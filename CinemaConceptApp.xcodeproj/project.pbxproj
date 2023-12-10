@@ -143,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				94595C452AEED8060066B1E6 /* Info.plist */,
+				944E52DD2B263ED40061595C /* Common */,
+				944E52DC2B263EB50061595C /* Login */,
 				94C884D32AEF16FE00FAE2E4 /* FuncModels */,
 				941517C42AE19C4B00137FB6 /* Views */,
 				941517B52AE19C0B00137FB6 /* CinemaConceptAppApp.swift */,
@@ -174,13 +176,27 @@
 				941517C92AE19CA100137FB6 /* ViewMain.swift */,
 				941517CB2AE19CAE00137FB6 /* ViewList.swift */,
 				941517CD2AE19CBA00137FB6 /* ViewSettings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		944E52DC2B263EB50061595C /* Login */ = {
+			isa = PBXGroup;
+			children = (
 				94883B072AE1C0B500BC1708 /* WelcomeView.swift */,
 				94883B092AE1C0C000BC1708 /* SignInView.swift */,
 				94883B0B2AE1C0D400BC1708 /* GetCodeView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		944E52DD2B263ED40061595C /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				94D6991B2AE590BB00AA91F7 /* NavBarView.swift */,
 				9482416A2AEBC457004764B4 /* ProductPageView.swift */,
 			);
-			path = Views;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		94C884D32AEF16FE00FAE2E4 /* FuncModels */ = {
