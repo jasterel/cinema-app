@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var selectTab = "Main"
     @State private var index: Int = 1
+    // 0 = Unauthorized, 1 = Authorized
     
     let tabs = ["Downloads", "Search", "Main", "List", "Settings"]
     
