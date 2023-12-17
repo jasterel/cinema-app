@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductPageView: View {
     
-    @Environment(\.dismiss) var dismiss
+//    @Environment(\.dismiss) var dismiss
     
     let movie: movieCard
     
@@ -50,7 +50,6 @@ struct ProductPageView: View {
                 .padding(.horizontal, 20)
                 .padding(.top, 10)
                 
-                // FIXME: Button is elidgeable only if a text is clicked
                 HStack {
                     Button {
                         print("OpenPlayer")

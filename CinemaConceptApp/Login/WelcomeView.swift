@@ -74,12 +74,13 @@ struct WelcomeView: View {
                             .foregroundColor(.white)
                     }
                 }
-                .accentColor(.orange)
+                .navigationTitle("")
                 .padding(.horizontal, 24)
                 .padding(.vertical, 20)
                 .preferredColorScheme(.dark)
             }
         }
+        .accentColor(.orange)
     }
 }
 

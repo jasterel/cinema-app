@@ -45,7 +45,7 @@ struct ViewMain: View {
                     // Upcoming
                     
                     HStack {
-                        Text("Upcoming")
+                        Text("Out Now!")
                             .foregroundColor(.white)
                             .fontWeight(.heavy)
                             .font(.title)
@@ -101,12 +101,12 @@ struct ViewMain: View {
             }
             .padding()
             .background(Color("BGCOLOR"))
-            .accentColor(.orange)
             .overlay (
                 NavBarView(title: "Movies")
             )
         .preferredColorScheme(.dark)
         }
+        .accentColor(.orange)
     }
 }
 
